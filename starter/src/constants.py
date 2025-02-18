@@ -15,3 +15,6 @@ cleaned_file_path = "../data/cleaned_census.csv"
 
 #path to the log file
 log_file_path = '../logs/logs.log'
+
+#path to the log file created when testing
+log_file_test_path = '../logs/logs_tests.log'

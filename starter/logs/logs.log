@@ -1,4 +1,0 @@
-2025-02-18 12:30:03,695 root - INFO - File loaded
-2025-02-18 12:30:03,695 root - INFO - Whitespaces removed from column names
-2025-02-18 12:30:03,710 root - INFO - Duplicated rows removed from the dataframe
-2025-02-18 12:30:03,804 root - INFO - Cleaned dataframe saved
