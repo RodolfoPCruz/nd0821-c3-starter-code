@@ -1,3 +1,17 @@
-2025-02-18 16:56:05,403 root - INFO - Testing import_data function
-2025-02-18 16:56:05,446 root - INFO - File loaded
-2025-02-18 16:56:05,446 root - INFO - Sucess: Dataframe Loaded
+2025-02-19 08:43:32,105 root - INFO - Testing import_data function
+2025-02-19 08:43:32,158 root - INFO - File loaded
+2025-02-19 08:43:32,159 root - INFO - Sucess: Dataframe Loaded
+2025-02-19 08:43:32,200 root - INFO - File loaded
+2025-02-19 08:43:32,200 root - INFO - Testing removing_whitespaces function
+2025-02-19 08:43:32,200 root - INFO - Whitespaces removed from column names
+2025-02-19 08:43:32,200 root - INFO - Sucess: There are not leading or trailing spaces in the column names
+2025-02-19 08:43:32,247 root - INFO - File loaded
+2025-02-19 08:43:32,247 root - INFO - Testing removing_duplicates function
+2025-02-19 08:43:32,261 root - INFO - Duplicated rows removed from the dataframe
+2025-02-19 08:43:32,273 root - INFO - Sucess: There are not duplicated rows
+2025-02-19 08:43:32,310 root - INFO - File loaded
+2025-02-19 08:43:32,311 root - INFO - Testing saving_dataframe function
+2025-02-19 08:43:32,311 root - INFO - Whitespaces removed from column names
+2025-02-19 08:43:32,325 root - INFO - Duplicated rows removed from the dataframe
+2025-02-19 08:43:32,418 root - INFO - Cleaned dataframe saved
+2025-02-19 08:43:32,418 root - INFO - Sucess: The file was saved
