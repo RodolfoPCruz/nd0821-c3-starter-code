@@ -3,18 +3,18 @@ Script to clean the dataset.
  - Removal o duplicate rows;
  - Removal o leading and trailing spaces in the column names.
 """
-import logging
-
+from logging_config import app_logger
 import pandas as pd
 
 from constants import cleaned_file_path, log_file_path, raw_file_path
 
+'''
 logging.basicConfig(
     filename=log_file_path,
     level=logging.INFO,
     filemode='w',
     format='%(asctime)- 15s %(name)s - %(levelname)s - %(message)s')
-
+'''
 
 def import_data(pth: str) -> pd.DataFrame:
     """
@@ -27,7 +27,7 @@ def import_data(pth: str) -> pd.DataFrame:
         df: pandas dataframe
     """
     df = pd.read_csv(pth)
-    logging.info("File loaded")
+    app_logger.info("File loaded")
     return df
 
 
@@ -44,7 +44,7 @@ def removing_whitespaces(df: pd.DataFrame) -> pd.DataFrame:
     column_names = df.columns.to_list()
     column_names = [name.strip() for name in column_names]
     df.columns = column_names
-    logging.info("Whitespaces removed from column names")
+    app_logger.info("Whitespaces removed from column names")
     return df
 
 # Removing duplicates
@@ -60,8 +60,10 @@ def removing_duplicates(df: pd.DataFrame) -> pd.DataFrame:
     Returns:
         df: a pandas dataframe without duplicated rows
     """
+    initial_row = df.shape[0]
     df = df.drop_duplicates()
-    logging.info("Duplicated rows removed from the dataframe")
+    removed_rows = initial_row - df.shape[0]
+    app_logger.info(f"{removed_rows} duplicated rows removed")
 
     return df
 
@@ -75,7 +77,7 @@ def saving_dataframe(df: pd.DataFrame, pth: str):
         pth: a path to save the dataframe
     '''
     df.to_csv(path_or_buf=pth, index=False)
-    logging.info("Cleaned dataframe saved")
+    app_logger.info("Cleaned dataframe saved")
 
 
 if __name__ == "__main__":

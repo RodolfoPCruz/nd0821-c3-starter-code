@@ -1,6 +1,7 @@
 import pytest
 import sys
 import os
+import logging
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
@@ -131,26 +132,4 @@ def param_random_state_split():
     '''
     return random_state_split
 
-import logging
-import pytest
 
-@pytest.fixture(autouse=True)
-def setup_logging():
-    """Ensure tests log only to test.log, not the main application log."""
-    logger = logging.getLogger()  # Get the root logger
-
-    # Remove all existing handlers (prevents logging to app.log)
-    for handler in logger.handlers[:]:
-        logger.removeHandler(handler)
-
-    # Disable log propagation (prevents logs from appearing in other files)
-    logger.propagate = False
-
-    # Set up test logging
-    handler = logging.FileHandler(log_file_test_path, mode="w")  # Overwrite test log
-    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
-    handler.setFormatter(formatter)
-
-    # Add new handler for test logs only
-    logger.addHandler(handler)
-    logger.setLevel(logging.INFO)

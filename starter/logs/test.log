@@ -1,0 +1,18 @@
+2025-02-21 10:59:33,259 - test_logger - INFO - Testing import_data function
+2025-02-21 10:59:33,304 - test_logger - INFO - Sucess: Dataframe Loaded
+2025-02-21 10:59:33,349 - test_logger - INFO - Testing removing_whitespaces function
+2025-02-21 10:59:33,349 - test_logger - INFO - Sucess: There are not leading or trailing spaces in the column names
+2025-02-21 10:59:33,393 - test_logger - INFO - Testing removing_duplicates function
+2025-02-21 10:59:33,419 - test_logger - INFO - Sucess: There are not duplicated rows
+2025-02-21 10:59:33,459 - test_logger - INFO - Testing saving_dataframe function
+2025-02-21 10:59:33,561 - test_logger - INFO - Sucess: The file was saved
+2025-02-21 11:01:21,928 - test_logger - INFO - Testing import_data function
+2025-02-21 11:01:21,976 - test_logger - INFO - Sucess: Dataframe Loaded
+2025-02-21 11:01:22,020 - test_logger - INFO - Testing removing_whitespaces function
+2025-02-21 11:01:22,020 - test_logger - INFO - Sucess: There are not leading or trailing spaces in the column names
+2025-02-21 11:01:22,065 - test_logger - INFO - Testing removing_duplicates function
+2025-02-21 11:01:22,091 - test_logger - INFO - Sucess: There are not duplicated rows
+2025-02-21 11:01:22,132 - test_logger - INFO - Testing saving_dataframe function
+2025-02-21 11:01:22,234 - test_logger - INFO - Sucess: The file was saved
+2025-02-21 11:07:57,470 - test_logger - INFO - The training dataframe was saved and it is not empty
+2025-02-21 11:07:57,470 - test_logger - INFO - The testing dataframe was saved and it is not empty

@@ -1,0 +1,27 @@
+2025-02-21 10:53:08,218 - app_logger - INFO - File loaded
+2025-02-21 10:53:08,218 - app_logger - INFO - Whitespaces removed from column names
+2025-02-21 10:53:08,239 - app_logger - INFO - Duplicated rows removed from the dataframe
+2025-02-21 10:53:08,343 - app_logger - INFO - Cleaned dataframe saved
+2025-02-21 10:59:33,304 - app_logger - INFO - File loaded
+2025-02-21 10:59:33,348 - app_logger - INFO - File loaded
+2025-02-21 10:59:33,349 - app_logger - INFO - Whitespaces removed from column names
+2025-02-21 10:59:33,392 - app_logger - INFO - File loaded
+2025-02-21 10:59:33,407 - app_logger - INFO - Duplicated rows removed from the dataframe
+2025-02-21 10:59:33,459 - app_logger - INFO - File loaded
+2025-02-21 10:59:33,459 - app_logger - INFO - Whitespaces removed from column names
+2025-02-21 10:59:33,474 - app_logger - INFO - Duplicated rows removed from the dataframe
+2025-02-21 10:59:33,561 - app_logger - INFO - Cleaned dataframe saved
+2025-02-21 11:01:21,976 - app_logger - INFO - File loaded
+2025-02-21 11:01:22,020 - app_logger - INFO - File loaded
+2025-02-21 11:01:22,020 - app_logger - INFO - Whitespaces removed from column names
+2025-02-21 11:01:22,065 - app_logger - INFO - File loaded
+2025-02-21 11:01:22,079 - app_logger - INFO - 24 duplicated rows removed
+2025-02-21 11:01:22,131 - app_logger - INFO - File loaded
+2025-02-21 11:01:22,132 - app_logger - INFO - Whitespaces removed from column names
+2025-02-21 11:01:22,146 - app_logger - INFO - 24 duplicated rows removed
+2025-02-21 11:01:22,234 - app_logger - INFO - Cleaned dataframe saved
+2025-02-21 11:04:55,747 - app_logger - INFO - Training and testing dataframes created
+2025-02-21 11:04:55,835 - app_logger - INFO - Training and testing dataframes saved
+2025-02-21 11:07:57,338 - app_logger - INFO - File loaded
+2025-02-21 11:07:57,343 - app_logger - INFO - Training and testing dataframes created
+2025-02-21 11:07:57,435 - app_logger - INFO - Training and testing dataframes saved

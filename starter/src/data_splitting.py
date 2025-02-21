@@ -1,20 +1,12 @@
 """
 Script to split the dataset into training and testing sets.
 """
-
-import logging
-
+from logging_config import app_logger 
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
 from constants import (cleaned_file_path, log_file_path, random_state_split,
                        test_path, test_size, train_path)
-
-logging.basicConfig(
-    filename=log_file_path,
-    level=logging.INFO,
-    filemode='w',
-    format='%(asctime)- 15s %(name)s - %(levelname)s - %(message)s')
 
 
 def load_cleaned_data(pth: str) -> pd.DataFrame:
@@ -51,10 +43,10 @@ def split_data(
     """
     train_df, test_df = train_test_split(
         df, test_size = test_proportion, random_state=random_state)
-    logging.info('Training and testing dataframes created')
+    app_logger.info('Training and testing dataframes created')
     train_df.to_csv(train_pth, index=False)
     test_df.to_csv(test_pth, index=False)
-    logging.info('Training and testing dataframes saved')
+    app_logger.info('Training and testing dataframes saved')
     return train_df, test_df
 
 

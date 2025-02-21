@@ -4,13 +4,14 @@ Test funcion in data_splitting.py
 Test if the training and testing dataframes are created and saved
 """
 
-import logging
 import os
 import sys
 
 import pandas as pd
 from constants import log_file_test_path
 from data_splitting import split_data
+from logging_config import test_logger
+
 
 sys.path.append(
     os.path.abspath(
@@ -18,13 +19,6 @@ sys.path.append(
             os.path.dirname(__file__),
             '..',
             'src')))
-
-logging.basicConfig(
-        filename=log_file_test_path,
-        level=logging.INFO,
-        force=True,
-        filemode='w',
-        format='%(asctime)- 15s %(name)s - %(levelname)s - %(message)s')
 
 def test_data_splitting(param_cleaned_data,
                         param_train_path,
@@ -42,7 +36,6 @@ def test_data_splitting(param_cleaned_data,
         param_test_size(float): proportion of the data to include in the test split
 
     '''
-
     _, _ = split_data(param_cleaned_data,
                       param_test_size,
                       param_train_path,
@@ -55,14 +48,14 @@ def test_data_splitting(param_cleaned_data,
     try:
         assert train.shape[0] > 0
         assert train.shape[1] > 0
-        logging.info('The training dataframe was saved and it is not empty')
+        test_logger.info('The training dataframe was saved and it is not empty')
     except AssertionError as err:
-        logging.error("The training dataframe is empty")
+        test_logger.error("The training dataframe is empty")
         raise err
     try:
         assert test.shape[0] > 0
         assert test.shape[1] > 0
-        logging.info('The testing dataframe was saved and it is not empty')
+        test_logger.info('The testing dataframe was saved and it is not empty')
     except AssertionError as err:
-        logging.error("The testing dataframe is empty")
+        test_logger.error("The testing dataframe is empty")
         raise err
