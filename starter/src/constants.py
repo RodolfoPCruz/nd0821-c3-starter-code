@@ -18,3 +18,15 @@ log_file_path = '../logs/logs.log'
 
 #path to the log file created when testing
 log_file_test_path = '../logs/logs_tests.log'
+
+# Random state for splitting the data
+random_state_split = 42
+
+#Test size
+test_size = 0.2
+
+# path to the train dataframe
+train_path = "../data/train.csv"
+
+# path to the test dataframe
+test_path = "../data/test.csv"
