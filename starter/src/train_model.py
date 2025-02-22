@@ -27,7 +27,6 @@ X_train, y_train, encoder, lb = process_data(train,
                                              label=label,
                                              training=True
                                              )
-print(type(X_train))
 
 # Process the test data with the process_data function.
 X_test, y_test, _, _ = process_data(test, categorical_features=cat_features,
@@ -35,6 +34,10 @@ X_test, y_test, _, _ = process_data(test, categorical_features=cat_features,
                                     training=False,
                                     encoder=encoder,
                                     lb=lb)
+
+X_train.to_csv('../data/x_preprocessed.csv',index=False)
+import numpy as np
+np.savetxt('../data/y.txt', y_train)
 
 # Train model.
 random_forest_model = train_model(X_train, y_train)

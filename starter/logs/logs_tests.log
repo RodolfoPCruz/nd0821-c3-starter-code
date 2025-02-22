@@ -55,3 +55,8 @@
 2025-02-22 15:51:03,560 - app_logger - INFO - Logs for data_splitting.py
 2025-02-22 15:51:03,717 - app_logger - INFO - Training and testing dataframes created
 2025-02-22 15:51:03,995 - app_logger - INFO - Training and testing dataframes saved
+2025-02-22 18:18:51,501 - app_logger - INFO - Logs for basic_cleaning.py
+2025-02-22 18:18:51,642 - app_logger - INFO - File loaded
+2025-02-22 18:18:51,643 - app_logger - INFO - Whitespaces removed from column names
+2025-02-22 18:18:51,819 - app_logger - INFO - 24 duplicated rows removed
+2025-02-22 18:18:52,114 - app_logger - INFO - Cleaned dataframe saved

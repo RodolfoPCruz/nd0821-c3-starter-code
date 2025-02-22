@@ -55,7 +55,7 @@ def process_data(
     else:
         y = np.array([])
 
-    X_categorical = X[categorical_features].values
+    X_categorical = X[categorical_features]
     X_continuous = X.drop(*[categorical_features], axis=1)
 
     if training is True:
@@ -71,5 +71,5 @@ def process_data(
         except AttributeError:
             pass
 
-    X = np.concatenate([X_continuous, X_categorical], axis=1)
+    X = pd.concat([X_continuous, X_categorical], axis=1)
     return X, y, encoder, lb

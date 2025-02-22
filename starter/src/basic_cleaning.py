@@ -6,7 +6,7 @@ Script to clean the dataset.
 import pandas as pd
 from logging_config import app_logger
 
-from constants import cleaned_file_path, raw_file_path
+from constants import cleaned_file_path, raw_file_path, cat_features
 
 app_logger.info("Logs for basic_cleaning.py")
 
@@ -26,10 +26,11 @@ def import_data(pth: str) -> pd.DataFrame:
     return df
 
 
-def removing_whitespaces(df: pd.DataFrame) -> pd.DataFrame:
+def removing_whitespaces(df: pd.DataFrame, categorical_features: list = cat_features) -> pd.DataFrame:
     """
     Remove whitespaces in the column names
-
+    Remove whitespaces from  values of categorical features
+    
     Args:
         df: a pandas dataframe
 
@@ -40,6 +41,11 @@ def removing_whitespaces(df: pd.DataFrame) -> pd.DataFrame:
     column_names = [name.strip() for name in column_names]
     df.columns = column_names
     app_logger.info("Whitespaces removed from column names")
+
+    for feature in cat_features:
+        df[feature] = df[feature].apply(lambda x: x.strip())
+    
+
     return df
 
 # Removing duplicates
