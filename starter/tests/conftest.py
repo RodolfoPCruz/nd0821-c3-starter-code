@@ -124,4 +124,13 @@ def param_random_state_split():
     '''
     return random_state_split
 
+@pytest.fixture
+def param_number_features():
+    '''
+    Provide the number of features in the input data
+    
+    Return
+        int: number of fatures in the input data
+    '''
 
+    return 108

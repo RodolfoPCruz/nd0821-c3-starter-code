@@ -1,0 +1,51 @@
+2025-02-22 11:45:16,800 - app_logger - INFO - Logs for basic_cleaning.py
+2025-02-22 11:47:15,492 - app_logger - INFO - Logs for basic_cleaning.py
+2025-02-22 11:47:20,741 - test_logger - INFO - Testing train_model with valid inputs
+2025-02-22 11:47:20,741 - test_logger - INFO - Sucess: A RandomForestClassifier instance was created
+2025-02-22 11:47:20,748 - test_logger - INFO - Sucess: A RandomForestClassifier was trained and it has the feature_importances_ attribute
+2025-02-22 11:47:20,750 - test_logger - INFO - Testing train_model for reproducibility
+2025-02-22 11:47:21,081 - test_logger - INFO - Sucess: The two models are equal
+2025-02-22 11:47:21,084 - test_logger - INFO - Testing inference with valid inputs
+2025-02-22 11:47:21,408 - test_logger - INFO - Testing compute_model_metrics with valid inputs
+2025-02-22 11:47:21,560 - test_logger - INFO - Sucess: Precision is equal to 1 when all samples are correctly classified
+2025-02-22 11:47:21,560 - test_logger - INFO - Sucess: Recall is equal to 1 when all samples are correctly classified
+2025-02-22 11:47:21,560 - test_logger - INFO - Sucess: Fbeta is equal to 1 when all samples are correctly classified
+2025-02-22 11:47:21,578 - test_logger - INFO - Sucess: Precision is equal to 1 when there are no samples from the positive class
+2025-02-22 11:47:21,579 - test_logger - INFO - Sucess: Recall is equal to 1 when there are no samples from the positive class
+2025-02-22 11:47:21,579 - test_logger - INFO - Sucess: Fbeta is equal to 1 when there are no samples from the positive class
+2025-02-22 11:49:03,426 - app_logger - INFO - Logs for basic_cleaning.py
+2025-02-22 11:49:04,580 - test_logger - INFO - Testing train_model with valid inputs
+2025-02-22 11:49:04,580 - test_logger - INFO - Sucess: A RandomForestClassifier instance was created
+2025-02-22 11:49:04,587 - test_logger - INFO - Sucess: A RandomForestClassifier was trained and it has the feature_importances_ attribute
+2025-02-22 11:49:04,589 - test_logger - INFO - Testing train_model for reproducibility
+2025-02-22 11:49:04,964 - test_logger - INFO - Sucess: The two models are equal
+2025-02-22 11:49:04,967 - test_logger - INFO - Testing inference with valid inputs
+2025-02-22 11:49:05,238 - test_logger - INFO - Testing compute_model_metrics with valid inputs
+2025-02-22 11:49:05,259 - test_logger - INFO - The precision is correct
+2025-02-22 11:49:05,260 - test_logger - INFO - The recall is correct
+2025-02-22 11:49:05,260 - test_logger - INFO - The fbeta is correct
+2025-02-22 11:49:05,290 - test_logger - INFO - Sucess: Precision is equal to 1 when all samples are correctly classified
+2025-02-22 11:49:05,290 - test_logger - INFO - Sucess: Recall is equal to 1 when all samples are correctly classified
+2025-02-22 11:49:05,290 - test_logger - INFO - Sucess: Fbeta is equal to 1 when all samples are correctly classified
+2025-02-22 11:49:05,306 - test_logger - INFO - Sucess: Precision is equal to 1 when there are no samples from the positive class
+2025-02-22 11:49:05,306 - test_logger - INFO - Sucess: Recall is equal to 1 when there are no samples from the positive class
+2025-02-22 11:49:05,306 - test_logger - INFO - Sucess: Fbeta is equal to 1 when there are no samples from the positive class
+2025-02-22 11:49:55,547 - app_logger - INFO - Logs for basic_cleaning.py
+2025-02-22 11:49:56,500 - test_logger - INFO - Testing train_model with valid inputs
+2025-02-22 11:49:56,500 - test_logger - INFO - Sucess: A RandomForestClassifier instance was created
+2025-02-22 11:49:56,506 - test_logger - INFO - Sucess: A RandomForestClassifier was trained and it has the feature_importances_ attribute
+2025-02-22 11:49:56,508 - test_logger - INFO - Testing train_model for reproducibility
+2025-02-22 11:49:56,828 - test_logger - INFO - Sucess: The two models are equal
+2025-02-22 11:49:56,830 - test_logger - INFO - Testing inference with valid inputs
+2025-02-22 11:49:56,986 - test_logger - INFO - Sucess: A numpy array was returned
+2025-02-22 11:49:56,986 - test_logger - INFO - Success: The correct number of predictions were generated
+2025-02-22 11:49:56,988 - test_logger - INFO - Testing compute_model_metrics with valid inputs
+2025-02-22 11:49:57,011 - test_logger - INFO - The precision is correct
+2025-02-22 11:49:57,013 - test_logger - INFO - The recall is correct
+2025-02-22 11:49:57,014 - test_logger - INFO - The fbeta is correct
+2025-02-22 11:49:57,039 - test_logger - INFO - Sucess: Precision is equal to 1 when all samples are correctly classified
+2025-02-22 11:49:57,039 - test_logger - INFO - Sucess: Recall is equal to 1 when all samples are correctly classified
+2025-02-22 11:49:57,039 - test_logger - INFO - Sucess: Fbeta is equal to 1 when all samples are correctly classified
+2025-02-22 11:49:57,071 - test_logger - INFO - Sucess: Precision is equal to 1 when there are no samples from the positive class
+2025-02-22 11:49:57,072 - test_logger - INFO - Sucess: Recall is equal to 1 when there are no samples from the positive class
+2025-02-22 11:49:57,072 - test_logger - INFO - Sucess: Fbeta is equal to 1 when there are no samples from the positive class

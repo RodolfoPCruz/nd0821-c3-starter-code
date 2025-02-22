@@ -50,3 +50,9 @@ label = "salary"
 
 # Random state for ml model
 random_state_model = 42
+
+# Model Name
+model_name = 'Random Forest'
+
+# Path classification report
+classification_report_path = '../images/classification_report.png'
