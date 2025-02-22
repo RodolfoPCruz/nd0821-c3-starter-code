@@ -54,5 +54,8 @@ random_state_model = 42
 # Model Name
 model_name = 'Random Forest'
 
-# Path classification report
+#Path classification report
 classification_report_path = '../images/classification_report.png'
+
+#Path confusion matrix
+confusion_matrix_path = '../images/confusion_matrix.png'

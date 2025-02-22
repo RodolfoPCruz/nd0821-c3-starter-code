@@ -1,14 +1,14 @@
 """
 Script to train a machine learning models, generate predictions and calculate metrics.
-
 """
 
 
 from sklearn.metrics import fbeta_score, precision_score, recall_score
 from sklearn.ensemble import RandomForestClassifier
-from constants import random_state_model, model_name, classification_report_path
+from constants import random_state_model, model_name, classification_report_path, confusion_matrix_path
 import matplotlib.pyplot as plt
-from sklearn.metrics import classification_report
+from sklearn.metrics import classification_report, confusion_matrix
+import seaborn as sns
 
 def train_model(X_train, y_train):
     """
@@ -101,7 +101,7 @@ def inference(model, X):
     preds = model.predict(X)
     return preds
 
-def classification_report_image(y_train, y_train_preds,
+def save_classification_report_image(y_train, y_train_preds,
                                 y_test, y_test_preds):
     """
     Produces classification report for training and testing results and stores report as image
@@ -138,3 +138,27 @@ def classification_report_image(y_train, y_train_preds,
     plt.axis('off')
     plt.savefig(classification_report_path)
     plt.clf()
+
+def create_save_confusion_matrix(y_true, y_pred):
+    """
+    Create a confusion_matrix and saves it as image
+    in images folder
+
+    Args:
+            
+            y        - expected outputs 
+            y_pred   - predictions for test data
+
+    Returns:
+             None
+    """
+    conf_matrix = confusion_matrix(y_true, y_pred)
+    plt.figure(figsize=(5, 5))
+    sns.heatmap(conf_matrix, annot=True, fmt="d", cmap="Blues", 
+        xticklabels=["Negative", "Positive"], yticklabels=["Negative", "Positive"])
+    plt.xlabel("Predicted Label")
+    plt.ylabel("True Label")
+    plt.title("Confusion Matrix")
+    plt.savefig(confusion_matrix_path, dpi=300, bbox_inches="tight")  # Saves as PNG
+
+     

@@ -49,3 +49,9 @@
 2025-02-22 11:49:57,071 - test_logger - INFO - Sucess: Precision is equal to 1 when there are no samples from the positive class
 2025-02-22 11:49:57,072 - test_logger - INFO - Sucess: Recall is equal to 1 when there are no samples from the positive class
 2025-02-22 11:49:57,072 - test_logger - INFO - Sucess: Fbeta is equal to 1 when there are no samples from the positive class
+2025-02-22 15:50:37,415 - app_logger - INFO - Logs for data_splitting.py
+2025-02-22 15:50:37,820 - app_logger - INFO - Training and testing dataframes created
+2025-02-22 15:50:38,067 - app_logger - INFO - Training and testing dataframes saved
+2025-02-22 15:51:03,560 - app_logger - INFO - Logs for data_splitting.py
+2025-02-22 15:51:03,717 - app_logger - INFO - Training and testing dataframes created
+2025-02-22 15:51:03,995 - app_logger - INFO - Training and testing dataframes saved

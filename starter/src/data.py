@@ -1,6 +1,8 @@
 import numpy as np
 from sklearn.preprocessing import LabelBinarizer, OneHotEncoder
 import pandas as pd
+from sklearn import set_config
+
 
 def process_data(
     X, categorical_features=[], label=None, training=True, encoder=None, lb=None
@@ -43,6 +45,9 @@ def process_data(
         Trained LabelBinarizer if training is True, otherwise returns the binarizer
         passed in.
     """
+
+    set_config(transform_output="pandas")
+
 
     if label is not None:
         y = X[label]
