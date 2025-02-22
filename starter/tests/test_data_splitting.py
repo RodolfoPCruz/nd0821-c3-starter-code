@@ -8,7 +8,6 @@ import os
 import sys
 
 import pandas as pd
-from constants import log_file_test_path
 from data_splitting import split_data
 from logging_config import test_logger
 
@@ -19,6 +18,7 @@ sys.path.append(
             os.path.dirname(__file__),
             '..',
             'src')))
+
 
 def test_data_splitting(param_cleaned_data,
                         param_train_path,
@@ -45,10 +45,13 @@ def test_data_splitting(param_cleaned_data,
     train = pd.read_csv(param_train_path)
     test = pd.read_csv(param_test_path)
 
+    test_logger.info('Testing data_splitting function')
+
     try:
         assert train.shape[0] > 0
         assert train.shape[1] > 0
-        test_logger.info('The training dataframe was saved and it is not empty')
+        test_logger.info(
+            'The training dataframe was saved and it is not empty')
     except AssertionError as err:
         test_logger.error("The training dataframe is empty")
         raise err

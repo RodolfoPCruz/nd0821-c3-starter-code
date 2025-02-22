@@ -20,15 +20,6 @@ sys.path.append(
             '..',
             'src')))
 
-'''
-logging.basicConfig(
-    level=logging.INFO,
-    force=True,
-    filemode='w',
-    format='%(asctime)- 15s %(name)s - %(levelname)s - %(message)s')
-'''
-
-
 
 def test_load_data(param_raw_file_path):
     """

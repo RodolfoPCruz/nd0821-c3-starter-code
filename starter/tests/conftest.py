@@ -5,7 +5,7 @@ import logging
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
-from constants import raw_file_path, cleaned_file_path, train_path, test_path, test_size, random_state_split, log_file_test_path
+from constants import raw_file_path, cleaned_file_path, train_path, test_path, test_size, random_state_split, cat_features, label
 from basic_cleaning import import_data
 
 @pytest.fixture
@@ -59,15 +59,7 @@ def param_categorical_features():
     Return 
         list: list of categorical features
     """
-    cat_features = [
-    "workclass",
-    "education",
-    "marital-status",
-    "occupation",
-    "relationship",
-    "race",
-    "sex",
-    "native-country"]
+    
     return cat_features
 
 @pytest.fixture
@@ -78,7 +70,7 @@ def param_label():
     Return
         str: column name of the expected output
     '''
-    return "salary"
+    return label
 
 @pytest.fixture
 def param_train_path():

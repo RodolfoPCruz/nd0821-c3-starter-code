@@ -3,18 +3,13 @@ Script to clean the dataset.
  - Removal o duplicate rows;
  - Removal o leading and trailing spaces in the column names.
 """
-from logging_config import app_logger
 import pandas as pd
+from logging_config import app_logger
 
-from constants import cleaned_file_path, log_file_path, raw_file_path
+from constants import cleaned_file_path, raw_file_path
 
-'''
-logging.basicConfig(
-    filename=log_file_path,
-    level=logging.INFO,
-    filemode='w',
-    format='%(asctime)- 15s %(name)s - %(levelname)s - %(message)s')
-'''
+app_logger.info("Logs for basic_cleaning.py")
+
 
 def import_data(pth: str) -> pd.DataFrame:
     """

@@ -30,3 +30,23 @@ train_path = "../data/train.csv"
 
 # path to the test dataframe
 test_path = "../data/test.csv"
+
+#path to the model
+model_path = "../model/random_forest_model.pkl"
+
+#categorical features
+cat_features = [
+    "workclass",
+    "education",
+    "marital-status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native-country"]
+
+#column name of the expected output
+label = "salary"
+
+# Random state for ml model
+random_state_model = 42
